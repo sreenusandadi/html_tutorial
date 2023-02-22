@@ -11,12 +11,20 @@
 </head>
 
 <body>
-    <table border="1" width="600px" colspace="0">
+    <table border="1" width="100%" cellspacing="0">
+        <caption>Personal Details:</caption>
+        <colgroup>
+            <col style="background-color: blue;" span="2">
+            <col style="background-color: aqua;" span="2">
+            <col>
+            <col style="background-color: red;">
+        </colgroup>
         <thead>
             <tr>
                 <th colspan="2">Full Name</th>
                 <th>Age</th>
                 <th>Country</th>
+                <th>Hobbies</th>
                 <th>Salary</th>
             </tr>
         </thead>
@@ -27,13 +35,15 @@
                 <td>Sandadi</td>
                 <td>31</td>
                 <td>India</td>
-                <td>30k</td>
+                <td>Reading, playing</td>
+                <td>30$</td>
             </tr>
             <tr>
                 <td>Konda</td>
                 <td>Guravaiah</td>
                 <td>27</td>
                 <td>UK</td>
+                <td>watching, running</td>
                 <td>50$</td>
             </tr>
             <tr>
@@ -41,20 +51,40 @@
                 <td>Sur1</td>
                 <td>25</td>
                 <td>USA</td>
+                <td>reading, watching</td>
                 <td rowspan="3">60$</td>
             </tr>
             <tr>
                 <td>Sur2</td>
                 <td>50</td>
                 <td>USA</td>
-
+                <td>running, watching</td>
             </tr>
             <tr>
                 <td>Sur3</td>
                 <td>60</td>
                 <td>USA</td>
+                <td>
+                    <table border="1" cellspacing="0" width="100%">
+                        <tr>
+                            <td>eating</td>
+                        </tr>
+                        <tr>
+                            <td>running</td>
+                        </tr>
+                        <tr>
+                            <td>palying</td>
+                        </tr>
+                    </table>
+                </td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Total:</td>
+                <td>140$</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 
