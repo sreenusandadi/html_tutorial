@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Dates</legend>
+            <p>
+                <label for="date_time">Display Date with Time:</label>
+                <input type="datetime-local" name="date_time" id="date_time">
+            </p>
+            <p>
+                <label for="month">Month:</label>
+                <input type="month" name="month" id="month">
+            </p>
+            <p>
+                <label for="fruit">Pic one Fruit:</label>
+                <input type="text" name="fruit" id="fruit" list="suggetion">
+
+                <datalist id="suggetion">
+                    <label for="altFruit">Pic one from the drop down:</label>
+                    <select name="altFruit" id="altFruit">
+                        <option>Banana</option>
+                        <option>Apple</option>
+                        <option>Kiwi</option>
+                        <option>Grape</option>
+                        <option>Mango</option>
+                    </select>
+                </datalist>
+            </p>
+            <p>
+                <label for="range">Selected Range:</label>
+                <input type="range" list="selected_range" min="0" max="40" value="30">
+                <datalist id="selected_range">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="progress">Show Progress:</label>
+                <progress max="100" value="70" name="progress" id="progress">70/100</progress>
+            </p>
+            <p>
+                <label for="meter">Show meter:</label>
+                <meter min="10" max="100" value="90" low="30" high="80" name="meter" id="meter"
+                    optimum="90">70/100</meter>
+            </p>
+            <p>
+                <button>Submit</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>

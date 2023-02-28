@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        textarea {
+            resize: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action='' method="get" novalidate target="_blank">
+            <fieldset>
+                <legend>Contact Form</legend>
+                <p>
+                    <label for="first_name">First Name:</label>
+                    <input id="first_name" name="first_name" size="20" autofocus="true" required minlength="2"
+                        maxlength="10">
+                    <label for="first_name"><abbr>*</abbr></label>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" size="20" required>
+                </p>
+                <p>
+                    <label for="last_name">Last Name:<abbr>*</abbr>
+                        <input id="last_name" name="last_name" maxlength="2" placeholder="Last Name" readonly
+                            value="San">
+                    </label>
+                </p>
+                <p>
+                    <label for="age">Age:<abbr>*</abbr>
+                        <input id="age" name="age" value="18" pattern="[0-9]{1,2}">
+                    </label>
+                </p>
+                <p>
+                    <label for="password">Password:<abbr>*</abbr>
+                        <input type="password" id="password" name="password">
+                    </label>
+                </p>
+                <ruby>
+                    <rt>World Wide Web</rt>
+                    <rb>WWW</rb>
+                </ruby>
+                <p>
+                    <div>
+                        <details>
+                            <summary>Details</summary>
+                            <p>This is hidden summury</p>
+                        </details>
+                    </div>
+                    <p>tkjsdh fg;;djkfgh ;djg ;lsdkjfg; ksjf g;lkjf gkfdglj;ljfg;l
+                        <wbr>this</wbr><wbr>line</wbr><wbr>should</wbr><wbr>bebreak</wbr>whileshrinkourscreensize</p>
+                    <fieldset>
+                        <legend>Vegitables</legend>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="tamato" name="vegitable" value="tamato"> <label
+                                    for="tamato">Tamato</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="brinzal" name="vegitable" value="brinzal"> <label
+                                    for="brinzal">Brinzal</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="carrot" name="vegitable" value="carrot"> <label
+                                    for="carrot">Carrot</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="potato" name="vegitable" value="potato"> <label
+                                    for="potato">Potato</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <!-- <fieldset>
+                        <legend>Food</legend>
+                        <ul>
+                            <li>
+                                <input type="radio" id="noodles" name="food" value="noodles"> <label
+                                    for="noodles">Noodles</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="biryani" name="food" value="biryani"> <label
+                                    for="biryani">Biryani</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="halva" name="food" value="halva"> <label
+                                    for="halva">Halva</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="curd_rice" name="food" value="curd_rice"> <label
+                                    for="curd_rice">Curd Rice</label>
+                            </li>
+                        </ul>
+                    </fieldset> -->
+                </p>
+                <p>
+                    <label for="content">Content: </label>
+                    <textarea id="content" name="content" cols="50" rows="10" wrap="off" minlength="3"
+                        maxlength="5"></textarea>
+                </p>
+            </fieldset>
+
+            <!-- <fieldset>
+                <legend>Books</legend>
+                <label for="book">Select Book:</label>
+                <select name="book" id="book" size="6" multiple>
+                    <optgroup label="Section 1">
+                        <option value="book1">Book 1</option>
+                        <option value="book2">Book 2</option>
+                        <option selected value="book3">Book 3</option>
+                        <option value="book4">Book 4</option>
+                    </optgroup>
+                    <optgroup label="Section 2">
+                        <option value="book5">Book 5</option>
+                        <option value="book2">Book 6</option>
+                        <option value="book3">Book 7</option>
+                        <option value="book4">Book 8</option>
+                    </optgroup>
+                </select>
+            </fieldset> -->
+            <input type="hidden" name="hidden" value="secure">
+            <p>
+                <button><strong>Submit</strong> Form</button>
+
+                <input type="submit" value="Submit">
+
+
+                <button type="reset">Reset</button>
+
+                <input type="reset" value="Reset">
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>

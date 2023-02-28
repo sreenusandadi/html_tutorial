@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <form method="dialog">
+        <fieldset>
+            <legend>HTML5 Forms types and attributes</legend>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" multiple>
+            </p>
+            <p>
+                <label for="search">Filter:</label>
+                <input type="search" id="search" name="search">
+            </p>
+            <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </p>
+            <p>
+                <label for="url">Web Site:</label>
+                <input type="url" id="url" name="url">
+            </p>
+            <p>
+                <label for="age">age:</label>
+                <input type="number" id="age" name="age" min="18" max="60">
+            </p>
+            <p>
+                <label for="slider">Range:</label>
+                <input type="range" id="slider" name="slider" min="18" max="60" value="50">
+                <output class="slider-output" for="slider"></output>
+            </p>
+            <p>
+                <label for="color">Select Color:</label>
+                <input type="color" id="color" name="color" value="#123476">
+            </p>
+            <P>
+                <button>Submit</button>
+            </P>
+        </fieldset>
+    </form>
+    <script>
+        var inputVal = document.querySelector('#slider').value;
+        var output = document.querySelector('.slider-output');
+        output.textContent = inputVal;
+
+        document.addEventListener('change', function () {
+            inputVal = document.querySelector('#slider').value;
+            output.textContent = inputVal;
+        });
+    </script>
+</body>
+
+</html>
