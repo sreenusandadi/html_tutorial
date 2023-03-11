@@ -1,0 +1,21 @@
+.table {
+    display: table;
+}
+
+.row {
+    display: table-row;
+}
+
+.column {
+    display: table-cell;
+}
+
+.container {
+    display: table;
+}
+
+.table-column {
+    width: 200px;
+    background-color: red;
+    display: table-cell;
+}

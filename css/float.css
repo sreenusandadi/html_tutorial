@@ -1,0 +1,42 @@
+/* .image {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.left {
+    float: left;
+    margin-right: 10px;
+}
+
+.right {
+    float: right;
+    margin-left: 10px;
+}
+
+.clear {
+    clear: both;
+} */
+
+.container {
+    width: 600px;
+    margin: auto;
+    background-color: red;
+}
+
+.container::after {
+    content: '';
+    display: table;
+    visibility: hidden;
+    clear: both;
+}
+
+.left-float {
+    width: 450px;
+    float: left;
+}
+
+.right-float {
+    width: 150px;
+    float: right;
+}
