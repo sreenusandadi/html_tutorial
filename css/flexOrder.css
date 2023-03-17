@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 450px;
+    height: 225px;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.child {
+    flex-basis: 100px;
+    border: 1px solid black;
+}
+
+/* .child:nth-of-type(1) {
+    order: 0;
+}
+
+.child:nth-of-type(3) {
+    order: 2;
+}
+
+.child:nth-of-type(2) {
+    order: 100;
+}
+
+.child:nth-of-type(4) {
+    order: -1;
+} */
+
+
