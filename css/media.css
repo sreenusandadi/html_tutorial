@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+p{
+    padding: 0 10px;
+}
+
+p.para1 {
+    border: 2px solid red;
+    background: pink url("../assets/small.jpg");
+    /* color: blue; */
+}
+
+p.para2 {
+    background-color: rebeccapurple;
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+    .container {
+        display: flex;
+    }
+
+    p.para2 {
+        margin-left: 10px;
+        color: blue
+    }
+}
+
+@media print {
+    p {
+        color: orangered;
+        font-size: 30px;
+    }
+}
+
+@media (orientation: portrait){
+    p.para1 {
+        font-size: 30px;
+    }
+}

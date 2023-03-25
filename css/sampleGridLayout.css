@@ -57,36 +57,37 @@
 
 .container1 {
     width: 800px;
+    height: 1300px;
     margin: 30px auto;
     background-color: aqua;
     display: grid;
-    grid-template-rows: repeat(3, 150px);
-    grid-template-columns: repeat(3, 1fr) 2fr;
+    grid-template-rows: repeat(2, 50px);
+    grid-template-columns: repeat(2, 100px);
     grid-gap: 30px;
-    /* grid-auto-rows: 100px; 
-    grid-auto-columns: 1fr; */
-    /* align-items: center;
-    justify-items: center;
-    align-content: center;
-    justify-content: end; */
+    grid-auto-rows: 50px; 
+    grid-auto-columns: 100px;
     grid-auto-flow: row dense;
+    /* align-items: center;
+    justify-items: center; */
+    align-content: center;
+    justify-content: center;
 }
 
 .items {
     background-color: violet;
 }
 
-.item-2 {
-    /* align-self: self-end;
-    justify-self: stretch; */
+.item-4 {
+    grid-row: 2/span 2;
 }
 
-/* .item-6 {
-    grid-row: 3/4;
-    grid-column: 2/3;
-}
-
-.item-8 {
-    grid-column: 3/5;
+/* .item-6{
+    grid-column: 1/-1;
 } */
+
+.item-7 {
+    grid-column: 1/-1;
+}
+
+
 

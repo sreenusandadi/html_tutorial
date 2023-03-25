@@ -13,7 +13,7 @@ img{
     /* transform: rotateZ(-40deg); */
 } 
 
-.circle {
+/* .circle {
     width: 100px;
     padding: 50px 0;
     border-radius: 50%;
@@ -30,4 +30,71 @@ img{
 .circle:hover {
     background: salmon;
     transform: rotate(360deg);
+} */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
 }
+
+.sky, .gross, .road {
+    position: relative;
+}
+
+.sky {
+    height: 40%;
+    background-color: skyblue;
+}
+
+.gross {
+    height: 30%;
+    background-color: seagreen;
+}
+
+.road {
+    height: 30%;
+    background-color: dimgray;
+    box-sizing: border-box;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+    width: 100%;
+}
+
+.road .lane{
+    position: relative;
+    top: 50%;
+    border: 2px white dotted;
+}
+
+.mario {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    /* animation-name: ride;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease; */
+    animation: ride 10s 3s infinite ease,
+                jump .3s 5s;
+}
+
+@keyframes ride {
+    0% {left: -200px;}
+    100% {left: 1500px;}
+}
+
+@keyframes jump {
+    0% {top: 40px;}
+    50% {top: 10px;}
+    100% {top: 40px;}
+}
+
+
+
+
+
